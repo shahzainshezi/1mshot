@@ -28,10 +28,10 @@ export default function Preloader() {
           // Remove from DOM after transition finishes
           setTimeout(() => {
             setShouldRender(false);
-          }, 800);
-        }, 300);
+          }, 400);
+        }, 150);
       }
-    }, 45); // Loader runs for ~1.5 seconds
+    }, 12); // Snappy loader
 
     return () => {
       clearInterval(interval);
@@ -50,7 +50,7 @@ export default function Preloader() {
         {/* Brand logo wrapper */}
         <div className="preloader-logo-wrap">
           <img
-            src="/1mshot-logo-cropped.png"
+            src="/1mshot-logo-cropped.webp"
             alt="1MSHOT"
             className="preloader-logo"
           />

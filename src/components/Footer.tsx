@@ -13,7 +13,7 @@ export default function Footer() {
         <div className="footer-top">
           <div className="footer-logo-wrap">
             <img
-              src="/1mshot-logo-cropped.png"
+              src="/1mshot-logo-cropped.webp"
               alt="1MSHOT"
               className="footer-logo"
             />

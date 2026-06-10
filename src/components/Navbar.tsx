@@ -20,7 +20,7 @@ export default function Navbar() {
         {/* Logo */}
         <div className="nav-logo">
           <img
-            src="/1mshot-logo-cropped.png"
+            src="/1mshot-logo-cropped.webp"
             alt="1MSHOT"
             style={{ height: "28px", width: "auto", display: "block" }}
           />

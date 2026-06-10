@@ -159,7 +159,7 @@ export default function HowItWorks() {
           </div>
 
           <div className="hiw-center-player">
-            <img src="/images/hiw_player_cropped.png" alt="1MSHOT Player" className="hiw-player-img" />
+            <img src="/images/hiw_player_cropped.webp" alt="1MSHOT Player" className="hiw-player-img" />
           </div>
 
           <div className="hiw-right-content">

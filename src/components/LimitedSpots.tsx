@@ -79,7 +79,7 @@ export default function LimitedSpots() {
         {/* Map Column (Right) */}
         <div className="beginning-map-col">
           <img
-            src="/images/image_48_map.png"
+            src="/images/image_48_map.webp"
             alt="US Map Scale"
             className="beginning-map-img"
           />

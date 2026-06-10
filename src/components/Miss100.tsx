@@ -8,7 +8,7 @@ export default function Miss100() {
           {/* Left Visual — Player holding neon green basketball (miss100_player.png) */}
           <div className="miss-image-wrapper">
             <img
-              src="/images/miss100_player.png"
+              src="/images/miss100_player.webp"
               alt="You miss 100% of the shots you don't take"
               className="miss-image"
             />

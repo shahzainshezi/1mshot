@@ -440,7 +440,7 @@ h6 {
   width: 100%;
   display: flex;
   align-items: center;
-  background-image: url('/images/hero_bg.png');
+  background-image: url('/images/hero_bg.webp');
   background-size: cover;
   background-position: right top;
   background-repeat: no-repeat;
@@ -637,7 +637,7 @@ h6 {
 
 @media (max-width: 768px) {
   .hero-section {
-    background-image: url('/images/hero_mobile_bg.png') !important;
+    background-image: url('/images/hero_mobile_bg.webp') !important;
     background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;
@@ -855,7 +855,7 @@ h6 {
 .stats-banner {
   position: relative;
   background-color: #000;
-  background-image: url('/images/frame_101.png');
+  background-image: url('/images/frame_101.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -955,7 +955,7 @@ h6 {
   content: '';
   position: absolute;
   inset: 0;
-  background-image: url('/images/frame_59_bg.png');
+  background-image: url('/images/frame_59_bg.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1266,7 +1266,7 @@ h6 {
 /* Responsiveness */
 @media (max-width: 1024px) {
   .hiw-section::before {
-    background-image: url('/images/hiw_mobile_bg.png') !important;
+    background-image: url('/images/hiw_mobile_bg.webp') !important;
     background-position: center center;
   }
 
@@ -1463,7 +1463,7 @@ h6 {
 }
 
 .format-panel {
-  background-image: url('/images/frame_20.png');
+  background-image: url('/images/frame_20.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1477,7 +1477,7 @@ h6 {
 }
 
 .format-panel-right {
-  background-image: url('/images/frame_20.png');
+  background-image: url('/images/frame_20.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1833,7 +1833,7 @@ h6 {
 .partners-section {
   position: relative;
   background-color: #000;
-  background-image: url('/images/frame_143_bg.png');
+  background-image: url('/images/frame_143_bg.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -2588,7 +2588,7 @@ h6 {
 .competition-bg-img {
   position: absolute;
   inset: 0;
-  background-image: url('/images/frame_69_with_player.png');
+  background-image: url('/images/frame_69_with_player.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -2741,7 +2741,7 @@ h6 {
   }
 
   .competition-bg-img {
-    background-image: url('/images/competition_mobile_player.png') !important;
+    background-image: url('/images/competition_mobile_player.webp') !important;
     background-size: 100% auto;
     background-position: center bottom;
     background-repeat: no-repeat;
@@ -2797,7 +2797,7 @@ h6 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   min-height: 910px;
-  background-image: url('/images/frame_21_bg.png');
+  background-image: url('/images/frame_21_bg.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -2888,7 +2888,7 @@ h6 {
 }
 
 .limited-section {
-  background-image: url('/images/frame_33_bg.png');
+  background-image: url('/images/frame_33_bg.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -3066,7 +3066,7 @@ h6 {
    ============================================================ */
 .after-section {
   position: relative;
-  background-image: url('/images/frame_83_bg.png');
+  background-image: url('/images/frame_83_bg.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -3234,7 +3234,7 @@ h6 {
    ============================================================ */
 .why-section {
   position: relative;
-  background-image: url('/images/frame_46_bg.png');
+  background-image: url('/images/frame_46_bg.webp');
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
@@ -3483,7 +3483,7 @@ h6 {
 .miss-section {
   position: relative;
   background-color: #000000;
-  background-image: url('/images/miss100_bg.png');
+  background-image: url('/images/miss100_bg.webp');
   background-size: cover;
   background-position: left top;
   background-repeat: no-repeat;
@@ -3689,7 +3689,7 @@ h6 {
     width: 100%;
     margin: -10px auto 0;
     align-self: center;
-    background-image: url('/images/miss100_mobile_player_bg.png') !important;
+    background-image: url('/images/miss100_mobile_player_bg.webp') !important;
     background-size: cover;
     background-position: center bottom;
     background-repeat: no-repeat;

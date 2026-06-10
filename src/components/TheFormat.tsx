@@ -51,14 +51,14 @@ export default function TheFormat() {
         {/* Center player images */}
         <div className="format-img-col format-img-left-col">
           <img
-            src="/images/format_player_left.png"
+            src="/images/format_player_left.webp"
             alt="Player"
             className="format-player-img"
           />
         </div>
         <div className="format-img-col format-img-right-col">
           <img
-            src="/images/format_player_right.png"
+            src="/images/format_player_right.webp"
             alt="Player"
             className="format-player-img"
           />
