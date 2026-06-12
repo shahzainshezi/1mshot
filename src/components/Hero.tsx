@@ -7,9 +7,16 @@ export default function Hero() {
       <div className="hero-container">
         <div className="hero-content">
           <h1 className="hero-title animate-fade-up delay-1">
-            The Official <br />
-            <span className="green-text">$1,000,000</span> <br />
-            3-Point Contest
+            <div className="hero-title-text">
+              The Official <br />
+              <span className="green-text">$1,000,000</span> <br />
+              3-Point Contest
+            </div>
+            <img
+              src="/images/hero-mobile-title.svg"
+              alt="The Official $1,000,000 3-Point Contest"
+              className="hero-title-mobile-img"
+            />
           </h1>
           
           <p className="hero-subtitle animate-fade-up delay-2">

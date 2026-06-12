@@ -127,6 +127,7 @@ h6 {
   font-size: 12px;
   border-radius: 4px;
   text-decoration: none;
+  white-space: nowrap;
 }
 
 .btn-cta:hover {
@@ -239,8 +240,13 @@ h6 {
 }
 
 .nav-mobile-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
   background: #0a0a0a;
   border-top: 1px solid rgba(255, 255, 255, 0.06);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
   padding: 20px 24px;
   display: flex;
   flex-direction: column;
@@ -258,8 +264,13 @@ h6 {
 }
 
 @media (max-width: 600px) {
-  .btn-cta {
-    display: none;
+  .navbar-inner {
+    padding: 0 12px;
+  }
+
+  .header-cta {
+    padding: 6px 10px;
+    font-size: 10px;
   }
 
   .nav-mobile-menu .btn-cta {
@@ -479,6 +490,10 @@ h6 {
   color: var(--white);
 }
 
+.hero-title-mobile-img {
+  display: none;
+}
+
 .hero-title span {
   color: #007B34;
 }
@@ -669,12 +684,19 @@ h6 {
   }
 
   .hero-title {
-    font-family: 'Tusker Grotesk', 'Bebas Neue', sans-serif;
-    font-size: clamp(44px, 12.5vw, 58px);
-    line-height: 0.92;
     margin-bottom: 16px;
-    font-weight: 900;
-    -webkit-text-stroke: 1px currentColor;
+  }
+
+  .hero-title-text {
+    display: none;
+  }
+
+  .hero-title-mobile-img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 420px;
+    margin: 0 auto;
   }
 
   .hero-subtitle {
@@ -699,13 +721,17 @@ h6 {
   }
 
   .btn-hero-cta {
-    font-size: clamp(12px, 3.8vw, 15px);
-    padding: 16px 12px;
+    font-size: clamp(10px, 3.3vw, 15px);
+    padding: 16px 8px;
     width: 100%;
     max-width: 100%;
     letter-spacing: 0.02em;
     border-radius: 4px;
     box-shadow: 0 4px 15px rgba(0, 123, 52, 0.3);
+    white-space: nowrap;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .hero-badges {
@@ -769,7 +795,10 @@ h6 {
 
   /* Mobile Stats Banner Overrides */
   .stats-banner {
+    background-image: url('/images/frame_101_mobile_bg.png');
     background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 
   .stats-banner-inner {
@@ -1547,6 +1576,13 @@ h6 {
   line-height: 1.1;
 }
 
+.format-content-body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
 .format-list {
   list-style: none;
   display: flex;
@@ -1654,22 +1690,39 @@ h6 {
   }
 
   .format-panel-title {
-    font-size: clamp(44px, 12vw, 50px);
+    font-size: clamp(48px, 12vw, 64px);
     font-weight: 900;
-    text-align: center;
-    margin-bottom: 8px;
+    text-align: center !important;
+    margin: 0 auto 12px auto !important;
+    line-height: 0.95;
+    width: 100% !important;
+    display: block !important;
   }
 
   .format-badge {
     align-self: center;
   }
 
+  .format-content-body {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+    width: 100% !important;
+    margin: 0 auto !important;
+  }
+
   .format-list {
-    margin: 24px auto 0 auto;
-    width: fit-content;
-    align-items: flex-start;
-    text-align: left;
+    margin: 20px auto 0 auto !important;
+    width: fit-content !important;
+    align-items: flex-start !important;
+    text-align: left !important;
     gap: 12px;
+  }
+
+  .format-panel-right .format-list {
+    margin-left: auto !important;
+    margin-right: auto !important;
   }
 
   .format-separator {
@@ -2208,7 +2261,7 @@ h6 {
   }
 
   .partners-heading {
-    font-size: clamp(40px, 11vw, 50px);
+    font-size: 65px;
     font-weight: 900;
     -webkit-text-stroke: 1.2px currentColor;
   }
@@ -2342,9 +2395,13 @@ h6 {
   }
 
   .btn-full-green {
-    font-size: 13px;
-    padding: 20px 24px;
+    font-size: clamp(10px, 3.3vw, 14px);
+    padding: 18px 12px;
     border-radius: 4px;
+    white-space: nowrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -2367,6 +2424,10 @@ h6 {
 
 .prizes-heading-wrap {
   text-align: center;
+}
+
+.prizes-heading-mobile-img {
+  display: none;
 }
 
 .prizes-heading-white {
@@ -2534,11 +2595,16 @@ h6 {
     padding: 0 24px;
   }
 
-  .prizes-heading-white,
-  .prizes-heading-green {
-    font-size: clamp(38px, 10vw, 48px);
-    font-weight: 900;
-    -webkit-text-stroke: 1.2px currentColor;
+  .prizes-heading-text {
+    display: none;
+  }
+
+  .prizes-heading-mobile-img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 380px;
+    margin: 0 auto;
   }
 
   .prizes-heading-row {
@@ -2754,7 +2820,7 @@ h6 {
   }
 
   .competition-heading {
-    font-size: clamp(44px, 12vw, 56px);
+    font-size: 70px;
     font-weight: 900;
     -webkit-text-stroke: 1.2px currentColor;
     margin-bottom: 12px;
@@ -3332,7 +3398,7 @@ h6 {
   }
 
   .why-heading {
-    font-size: clamp(48px, 12vw, 64px);
+    font-size: 70px;
     font-weight: 900;
     -webkit-text-stroke: 1.2px currentColor;
   }
@@ -3348,19 +3414,19 @@ h6 {
 
   /* Bold headings of subsequent sections on mobile */
   .beginning-heading {
-    font-size: clamp(40px, 11vw, 54px);
+    font-size: 70px;
     font-weight: 900;
     -webkit-text-stroke: 1.2px currentColor;
   }
 
   .limited-heading {
-    font-size: clamp(40px, 11vw, 54px);
+    font-size: 70px;
     font-weight: 900;
     -webkit-text-stroke: 1.2px currentColor;
   }
 
   .after-heading {
-    font-size: clamp(44px, 12vw, 58px);
+    font-size: 70px;
     font-weight: 900;
     -webkit-text-stroke: 1.2px currentColor;
   }
@@ -3555,6 +3621,10 @@ h6 {
   margin-bottom: 24px;
 }
 
+.miss-title-mobile-img {
+  display: none;
+}
+
 .miss-title .hollow-text {
   color: transparent;
   -webkit-text-stroke: 0.4px #ffffff;
@@ -3714,18 +3784,19 @@ h6 {
   }
 
   .miss-title {
-    font-size: clamp(44px, 12vw, 64px);
-    line-height: 0.94;
     margin-bottom: 20px;
-    font-family: 'Tusker Grotesk', 'Bebas Neue', sans-serif;
-    text-shadow: 0.5px 0 0 currentColor, -0.5px 0 0 currentColor;
-    text-align: left;
   }
 
-  .miss-title .hollow-text {
-    color: transparent;
-    -webkit-text-stroke: 1px #ffffff;
-    text-shadow: none;
+  .miss-title-text {
+    display: none;
+  }
+
+  .miss-title-mobile-img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 320px;
+    margin: 0 0 16px 0;
   }
 
   .miss-divider {

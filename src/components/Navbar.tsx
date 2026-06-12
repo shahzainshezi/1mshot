@@ -37,7 +37,7 @@ export default function Navbar() {
 
         {/* CTA Button */}
         <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-          <a href="#register" className="btn-cta" style={{ display: "block" }}>
+          <a href="#register" className="btn-cta header-cta">
             Secure Your Spot
           </a>
 
@@ -47,7 +47,15 @@ export default function Navbar() {
             onClick={() => setOpen(!open)}
             aria-label="Toggle Menu"
           >
-            {open ? <X size={24} /> : <Menu size={24} />}
+            {open ? (
+              <X size={24} />
+            ) : (
+              <img
+                src="/images/hamburger.svg"
+                alt="Menu"
+                style={{ height: "24px", width: "auto", display: "block" }}
+              />
+            )}
           </button>
         </div>
       </div>
@@ -65,7 +73,7 @@ export default function Navbar() {
               {item.label}
             </a>
           ))}
-          <a href="#register" className="btn-cta" style={{ textAlign: "center" }} onClick={() => setOpen(false)}>
+          <a href="#register" className="btn-cta menu-cta" style={{ textAlign: "center" }} onClick={() => setOpen(false)}>
             Secure Your Spot
           </a>
         </div>

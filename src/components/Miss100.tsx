@@ -17,11 +17,18 @@ export default function Miss100() {
           {/* Right Content */}
           <div className="miss-content">
             <h2 className="miss-title">
-              YOU MISS 100%
-              <br />
-              <span className="hollow-text">OF THE SHOTS</span>
-              <br />
-              <span className="green-title-text">YOU DON&apos;T TAKE.</span>
+              <div className="miss-title-text">
+                YOU MISS 100%
+                <br />
+                <span className="hollow-text">OF THE SHOTS</span>
+                <br />
+                <span className="green-title-text">YOU DON&apos;T TAKE.</span>
+              </div>
+              <img
+                src="/images/miss100-mobile-title.svg"
+                alt="YOU MISS 100% OF THE SHOTS YOU DON'T TAKE."
+                className="miss-title-mobile-img"
+              />
             </h2>
 
             <div className="miss-divider" />

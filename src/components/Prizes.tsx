@@ -11,11 +11,18 @@ export default function Prizes() {
     <section className="prizes-section" id="prizes">
       <div className="prizes-container">
         <div className="prizes-heading-wrap">
-          <h2 className="prizes-heading-white">STATE TO NATIONAL.</h2>
-          <div className="prizes-heading-row">
-            <span className="prizes-heading-white">REAL </span>
-            <span className="prizes-heading-green">REWARDS</span>
+          <div className="prizes-heading-text">
+            <h2 className="prizes-heading-white">STATE TO NATIONAL.</h2>
+            <div className="prizes-heading-row">
+              <span className="prizes-heading-white">REAL </span>
+              <span className="prizes-heading-green">REWARDS</span>
+            </div>
           </div>
+          <img
+            src="/images/rewards-mobile-title.svg"
+            alt="STATE TO NATIONAL. REAL REWARDS"
+            className="prizes-heading-mobile-img"
+          />
         </div>
 
         <div className="prizes-table">

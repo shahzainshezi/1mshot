@@ -32,15 +32,17 @@ export default function TheFormat() {
         {/* Left dark panel */}
         <div className="format-panel">
           <div className="format-badge">THE RULES</div>
-          <h2 className="format-panel-title">THE FORMAT</h2>
-          <ul className="format-list">
-            {rules.map((rule) => (
-              <li key={rule} className="format-list-item">
-                <CheckBullet />
-                <span>{rule}</span>
-              </li>
-            ))}
-          </ul>
+          <div className="format-content-body">
+            <h2 className="format-panel-title">THE FORMAT</h2>
+            <ul className="format-list">
+              {rules.map((rule) => (
+                <li key={rule} className="format-list-item">
+                  <CheckBullet />
+                  <span>{rule}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
           <div className="format-separator"></div>
           <div className="format-footer">
             <p className="format-footer-sub">No gimmicks. No shortcuts.</p>
@@ -67,15 +69,17 @@ export default function TheFormat() {
         {/* Right dark panel */}
         <div className="format-panel format-panel-right">
           <div className="format-badge">THE SHOOTERS</div>
-          <h2 className="format-panel-title">WHO THIS IS FOR</h2>
-          <ul className="format-list">
-            {shooters.map((shooter) => (
-              <li key={shooter} className="format-list-item">
-                <CheckBullet />
-                <span>{shooter}</span>
-              </li>
-            ))}
-          </ul>
+          <div className="format-content-body">
+            <h2 className="format-panel-title">WHO THIS IS FOR</h2>
+            <ul className="format-list">
+              {shooters.map((shooter) => (
+                <li key={shooter} className="format-list-item">
+                  <CheckBullet />
+                  <span>{shooter}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
           <div className="format-separator"></div>
           <div className="format-footer">
             <p className="format-footer-sub">The opportunity is here.</p>
