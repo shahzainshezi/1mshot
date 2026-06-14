@@ -1,7 +1,9 @@
+import CountUp from "./CountUp";
+
 function BasketballIcon() {
   return (
     <div className="prize-basketball-icon">
-      <img src="/images/mask_group_1.png" alt="Prize Icon" className="prize-icon-img" />
+      <img src="/1mshot/images/mask_group_1.png" alt="Prize Icon" className="prize-icon-img" />
     </div>
   );
 }
@@ -19,7 +21,7 @@ export default function Prizes() {
             </div>
           </div>
           <img
-            src="/images/rewards-mobile-title.svg"
+            src="/1mshot/images/rewards-mobile-title.svg"
             alt="STATE TO NATIONAL. REAL REWARDS"
             className="prizes-heading-mobile-img"
           />
@@ -30,7 +32,9 @@ export default function Prizes() {
           <div className="prize-col">
             <span className="prize-col-level">STATE LEVEL</span>
             <BasketballIcon />
-            <div className="prize-col-amount">$10,000</div>
+            <div className="prize-col-amount">
+              <CountUp end={10000} prefix="$" />
+            </div>
             <p className="prize-col-desc">High school & adult champions per state</p>
           </div>
 
@@ -38,7 +42,9 @@ export default function Prizes() {
           <div className="prize-col prize-col-border">
             <span className="prize-col-level">HIGH SCHOOL NATIONALS</span>
             <BasketballIcon />
-            <div className="prize-col-amount">$100,000</div>
+            <div className="prize-col-amount">
+              <CountUp end={100000} prefix="$" />
+            </div>
             <p className="prize-col-desc">One national champion</p>
           </div>
 
@@ -47,7 +53,9 @@ export default function Prizes() {
             <div className="prize-grand-badge">GRAND PRIZE</div>
             <span className="prize-col-level">ADULT NATIONAL CHAMPION</span>
             <BasketballIcon />
-            <div className="prize-col-amount">$1,000,000</div>
+            <div className="prize-col-amount">
+              <CountUp end={1000000} prefix="$" />
+            </div>
             <p className="prize-col-desc">One champion. One shot. One million.</p>
           </div>
         </div>
@@ -65,3 +73,4 @@ export default function Prizes() {
     </section>
   );
 }
+

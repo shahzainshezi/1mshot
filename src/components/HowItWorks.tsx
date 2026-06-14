@@ -34,7 +34,7 @@ export default function HowItWorks() {
             <div className="hiw-step-card">
               <div className="hiw-step-icon-area">
                 <div className="hiw-step-icon-box">
-                  <img src="/images/hiw_register.svg" alt="Register" />
+                  <img src="/1mshot/images/hiw_register.svg" alt="Register" />
                 </div>
               </div>
               <div className="hiw-step-text-container">
@@ -47,7 +47,7 @@ export default function HowItWorks() {
             <div className="hiw-step-card">
               <div className="hiw-step-icon-area">
                 <div className="hiw-step-icon-box">
-                  <img src="/images/hiw_compete.svg" alt="Compete" />
+                  <img src="/1mshot/images/hiw_compete.svg" alt="Compete" />
                 </div>
               </div>
               <div className="hiw-step-text-container">
@@ -60,7 +60,7 @@ export default function HowItWorks() {
             <div className="hiw-step-card">
               <div className="hiw-step-icon-area">
                 <div className="hiw-step-icon-box">
-                  <img src="/images/hiw_advance.svg" alt="Advance" />
+                  <img src="/1mshot/images/hiw_advance.svg" alt="Advance" />
                 </div>
               </div>
               <div className="hiw-step-text-container">
@@ -73,7 +73,7 @@ export default function HowItWorks() {
             <div className="hiw-step-card">
               <div className="hiw-step-icon-area">
                 <div className="hiw-step-icon-box">
-                  <img src="/images/hiw_win.svg" alt="Win" />
+                  <img src="/1mshot/images/hiw_win.svg" alt="Win" />
                 </div>
               </div>
               <div className="hiw-step-text-container">
@@ -97,7 +97,7 @@ export default function HowItWorks() {
             </div>
             <div className="hiw-mobile-content-col">
               <div className="hiw-mobile-icon-box">
-                <img src="/images/hiw_register.svg" alt="Register" />
+                <img src="/1mshot/images/hiw_register.svg" alt="Register" />
               </div>
               <h3 className="hiw-mobile-title">REGISTER</h3>
               <p className="hiw-mobile-desc">Secure your spot <br />before your city fills.</p>
@@ -111,7 +111,7 @@ export default function HowItWorks() {
             </div>
             <div className="hiw-mobile-content-col">
               <div className="hiw-mobile-icon-box">
-                <img src="/images/hiw_compete.svg" alt="Compete" />
+                <img src="/1mshot/images/hiw_compete.svg" alt="Compete" />
               </div>
               <h3 className="hiw-mobile-title">COMPETE</h3>
               <p className="hiw-mobile-desc">5 racks. 1 minute.<br /> Highest score wins.</p>
@@ -125,7 +125,7 @@ export default function HowItWorks() {
             </div>
             <div className="hiw-mobile-content-col">
               <div className="hiw-mobile-icon-box">
-                <img src="/images/hiw_advance.svg" alt="Advance" />
+                <img src="/1mshot/images/hiw_advance.svg" alt="Advance" />
               </div>
               <h3 className="hiw-mobile-title">ADVANCE</h3>
               <p className="hiw-mobile-desc">Top scores move<br /> forward to the next level.</p>
@@ -139,7 +139,7 @@ export default function HowItWorks() {
             </div>
             <div className="hiw-mobile-content-col">
               <div className="hiw-mobile-icon-box">
-                <img src="/images/hiw_win.svg" alt="Win" />
+                <img src="/1mshot/images/hiw_win.svg" alt="Win" />
               </div>
               <h3 className="hiw-mobile-title">WIN</h3>
               <p className="hiw-mobile-desc">
@@ -159,7 +159,7 @@ export default function HowItWorks() {
           </div>
 
           <div className="hiw-center-player">
-            <img src="/images/hiw_player_cropped.webp" alt="1MSHOT Player" className="hiw-player-img" />
+            <img src="/1mshot/images/hiw_player_cropped.webp" alt="1MSHOT Player" className="hiw-player-img" />
           </div>
 
           <div className="hiw-right-content">

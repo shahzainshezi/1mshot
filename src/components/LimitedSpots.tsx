@@ -10,7 +10,7 @@ const beginningItems = [
 function GreenBullet() {
   return (
     <span className="beg-bullet">
-      <img src="/images/mask_group_7.svg" alt="Check" className="beg-bullet-img" />
+      <img src="/1mshot/images/mask_group_7.svg" alt="Check" className="beg-bullet-img" />
     </span>
   );
 }
@@ -79,7 +79,7 @@ export default function LimitedSpots() {
         {/* Map Column (Right) */}
         <div className="beginning-map-col">
           <img
-            src="/images/image_48_map.webp"
+            src="/1mshot/images/image_48_map.webp"
             alt="US Map Scale"
             className="beginning-map-img"
           />

@@ -1,15 +1,15 @@
 const partnerLogos = [
-  { sublabel: "NIKE-LEVEL", desc: "PERFORMANCE", img: "/images/image_66.svg" },
-  { sublabel: "WILSON-LEVEL", desc: "QUALITY", img: "/images/mask_group_8.svg" },
-  { sublabel: "ESPN-LEVEL", desc: "EXPOSURE", img: "/images/image.png" },
-  { sublabel: "GATORADE-LEVEL", desc: "HYDRATION", img: "/images/image_68.svg" },
-  { sublabel: "OVERTIME-LEVEL", desc: "CONTENT", img: "/images/image_69.svg" },
+  { sublabel: "NIKE-LEVEL", desc: "PERFORMANCE", img: "/1mshot/images/image_66.svg" },
+  { sublabel: "WILSON-LEVEL", desc: "QUALITY", img: "/1mshot/images/mask_group_8.svg" },
+  { sublabel: "ESPN-LEVEL", desc: "EXPOSURE", img: "/1mshot/images/image.png" },
+  { sublabel: "GATORADE-LEVEL", desc: "HYDRATION", img: "/1mshot/images/image_68.svg" },
+  { sublabel: "OVERTIME-LEVEL", desc: "CONTENT", img: "/1mshot/images/image_69.svg" },
 ];
 const partnerCategories = [
-  { label: "official", type: "APPAREL PARTNER", img: "/images/Mask group (9).svg" },
-  { label: "official", type: "GAME BALL PARTNER", img: "/images/mask_group_gameball.svg" },
-  { label: "official", type: "HYDRATION PARTNER", img: "/images/mask_group_hydration.svg" },
-  { label: "official", type: "MEDIA PARTNER", img: "/images/mask_group_media.svg" },
+  { label: "official", type: "APPAREL PARTNER", img: "/1mshot/images/Mask group (9).svg" },
+  { label: "official", type: "GAME BALL PARTNER", img: "/1mshot/images/mask_group_gameball.svg" },
+  { label: "official", type: "HYDRATION PARTNER", img: "/1mshot/images/mask_group_hydration.svg" },
+  { label: "official", type: "MEDIA PARTNER", img: "/1mshot/images/mask_group_media.svg" },
 ];
 
 function GreenDivider() {

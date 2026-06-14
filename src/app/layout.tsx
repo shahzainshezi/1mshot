@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import CustomCursor from "@/components/CustomCursor";
 
 export const metadata: Metadata = {
   title: "1MSHOT — The Official $1,000,000 3-Point Contest",
@@ -22,7 +23,11 @@ export default function RootLayout({
         />
         <link href="https://api.fontshare.com/v2/css?f[]=satoshi@300,400,500,700,900&display=swap" rel="stylesheet" />
       </head>
-      <body style={{ overflowX: "hidden", maxWidth: "100vw", width: "100%" }} suppressHydrationWarning>{children}</body>
+      <body style={{ overflowX: "hidden", maxWidth: "100vw", width: "100%" }} suppressHydrationWarning>
+        <CustomCursor />
+        {children}
+      </body>
     </html>
   );
 }
+

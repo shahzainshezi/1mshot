@@ -2,17 +2,17 @@ const stats = [
   { 
     title: "One minute", 
     subtitle: "60 seconds to change your life",
-    icon: "/images/mask_group_one_minute.svg"
+    icon: "/1mshot/images/mask_group_one_minute.svg"
   },
   { 
     title: "Five Racks", 
     subtitle: "Five Racks. Unlimited focus.",
-    icon: "/images/mask_group_five_racks.svg"
+    icon: "/1mshot/images/mask_group_five_racks.svg"
   },
   { 
     title: "one million", 
     subtitle: "one shot. $1,000,000.",
-    icon: "/images/mask_group_one_million.svg"
+    icon: "/1mshot/images/mask_group_one_million.svg"
   },
 ];
 

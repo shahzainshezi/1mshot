@@ -8,7 +8,7 @@ const features = [
 function GreenBullet() {
   return (
     <span className="comp-bullet">
-      <img src="/images/mask_group_7.svg" alt="Bullet Icon" className="comp-bullet-img" />
+      <img src="/1mshot/images/mask_group_7.svg" alt="Bullet Icon" className="comp-bullet-img" />
     </span>
   );
 }

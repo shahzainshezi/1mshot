@@ -50,7 +50,7 @@ export default function Preloader() {
         {/* Brand logo wrapper */}
         <div className="preloader-logo-wrap">
           <img
-            src="/1mshot-logo-cropped.webp"
+            src="/1mshot/1mshot-logo-cropped.webp"
             alt="1MSHOT"
             className="preloader-logo"
           />

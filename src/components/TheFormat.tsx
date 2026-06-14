@@ -17,7 +17,7 @@ function CheckBullet() {
   return (
     <span className="format-bullet">
       <img 
-        src="/images/mask_group_7.svg" 
+        src="/1mshot/images/mask_group_7.svg" 
         alt="Check Icon" 
         style={{ width: '100%', height: '100%', objectFit: 'contain', display: 'block' }} 
       />
@@ -53,14 +53,14 @@ export default function TheFormat() {
         {/* Center player images */}
         <div className="format-img-col format-img-left-col">
           <img
-            src="/images/format_player_left.webp"
+            src="/1mshot/images/format_player_left.webp"
             alt="Player"
             className="format-player-img"
           />
         </div>
         <div className="format-img-col format-img-right-col">
           <img
-            src="/images/format_player_right.webp"
+            src="/1mshot/images/format_player_right.webp"
             alt="Player"
             className="format-player-img"
           />
