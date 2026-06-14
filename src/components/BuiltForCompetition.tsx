@@ -1,3 +1,5 @@
+
+const prefix = process.env.NEXT_PUBLIC_BASE_PATH || "";
 const features = [
   "City-based qualifiers",
   "State champions — $10,000",
@@ -8,7 +10,7 @@ const features = [
 function GreenBullet() {
   return (
     <span className="comp-bullet">
-      <img src="/1mshot/images/mask_group_7.svg" alt="Bullet Icon" className="comp-bullet-img" />
+      <img src={`\${prefix}/images/mask_group_7.svg`} alt="Bullet Icon" className="comp-bullet-img" />
     </span>
   );
 }

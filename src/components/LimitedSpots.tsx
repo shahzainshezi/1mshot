@@ -1,6 +1,8 @@
 "use client";
 import { useState, useEffect } from "react";
 
+const prefix = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
 const beginningItems = [
   "Real players.",
   "Real opportunity.",
@@ -10,7 +12,7 @@ const beginningItems = [
 function GreenBullet() {
   return (
     <span className="beg-bullet">
-      <img src="/1mshot/images/mask_group_7.svg" alt="Check" className="beg-bullet-img" />
+      <img src={`\${prefix}/images/mask_group_7.svg`} alt="Check" className="beg-bullet-img" />
     </span>
   );
 }
@@ -79,7 +81,7 @@ export default function LimitedSpots() {
         {/* Map Column (Right) */}
         <div className="beginning-map-col">
           <img
-            src="/1mshot/images/image_48_map.webp"
+            src={`\${prefix}/images/image_48_map.webp`}
             alt="US Map Scale"
             className="beginning-map-img"
           />

@@ -1,5 +1,7 @@
 import { ReactNode } from "react";
 
+const prefix = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
 interface Step {
   title: ReactNode;
   icon: ReactNode;
@@ -9,25 +11,25 @@ const afterSteps: Step[] = [
   {
     title: <>Your spot is<br />secured</>,
     icon: (
-      <object data="/1mshot/images/mask_group_10.svg" type="image/svg+xml" className="after-card-img" />
+      <object data={`\${prefix}/images/mask_group_10.svg`} type="image/svg+xml" className="after-card-img" />
     )
   },
   {
     title: <>Instant<br />confirmation</>,
     icon: (
-      <object data="/1mshot/images/mask_group_11.svg" type="image/svg+xml" className="after-card-img" />
+      <object data={`\${prefix}/images/mask_group_11.svg`} type="image/svg+xml" className="after-card-img" />
     )
   },
   {
     title: <>Event details sent<br />immediately</>,
     icon: (
-      <object data="/1mshot/images/mask_group_12.svg" type="image/svg+xml" className="after-card-img" />
+      <object data={`\${prefix}/images/mask_group_12.svg`} type="image/svg+xml" className="after-card-img" />
     )
   },
   {
     title: <>You compete<br />for your city</>,
     icon: (
-      <object data="/1mshot/images/mask_group_13.svg" type="image/svg+xml" className="after-card-img" />
+      <object data={`\${prefix}/images/mask_group_13.svg`} type="image/svg+xml" className="after-card-img" />
     )
   }
 ];

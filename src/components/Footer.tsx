@@ -1,3 +1,5 @@
+
+const prefix = process.env.NEXT_PUBLIC_BASE_PATH || "";
 const footerLinks = [
   { label: "Full Rules", href: "#details" },
   { label: "Eligibility", href: "#eligibility" },
@@ -13,7 +15,7 @@ export default function Footer() {
         <div className="footer-top">
           <div className="footer-logo-wrap">
             <img
-              src="/1mshot/1mshot-logo-cropped.webp"
+              src={`\${prefix}/1mshot-logo-cropped.webp`}
               alt="1MSHOT"
               className="footer-logo"
             />

@@ -1,18 +1,20 @@
+
+const prefix = process.env.NEXT_PUBLIC_BASE_PATH || "";
 const stats = [
   { 
     title: "One minute", 
     subtitle: "60 seconds to change your life",
-    icon: "/1mshot/images/mask_group_one_minute.svg"
+    icon: `\${prefix}/images/mask_group_one_minute.svg`
   },
   { 
     title: "Five Racks", 
     subtitle: "Five Racks. Unlimited focus.",
-    icon: "/1mshot/images/mask_group_five_racks.svg"
+    icon: `\${prefix}/images/mask_group_five_racks.svg`
   },
   { 
     title: "one million", 
     subtitle: "one shot. $1,000,000.",
-    icon: "/1mshot/images/mask_group_one_million.svg"
+    icon: `\${prefix}/images/mask_group_one_million.svg`
   },
 ];
 

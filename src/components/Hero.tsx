@@ -1,6 +1,8 @@
 "use client";
 import { Zap, CheckCircle, Shield } from "lucide-react";
 
+const prefix = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
 export default function Hero() {
   return (
     <section className="hero-section">
@@ -19,7 +21,7 @@ export default function Hero() {
               </div>
             </div>
             <img
-              src="/1mshot/images/hero-mobile-title.svg"
+              src={`\${prefix}/images/hero-mobile-title.svg`}
               alt="The Official $1,000,000 3-Point Contest"
               className="hero-title-mobile-img animate-fade-up"
             />

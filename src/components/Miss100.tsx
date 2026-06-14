@@ -1,5 +1,7 @@
 "use client";
 
+const prefix = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
 export default function Miss100() {
   return (
     <section className="miss-section">
@@ -8,7 +10,7 @@ export default function Miss100() {
           {/* Left Visual — Player holding neon green basketball (miss100_player.png) */}
           <div className="miss-image-wrapper">
             <img
-              src="/1mshot/images/miss100_player.webp"
+              src={`\${prefix}/images/miss100_player.webp`}
               alt="You miss 100% of the shots you don't take"
               className="miss-image"
             />
@@ -25,7 +27,7 @@ export default function Miss100() {
                 <span className="green-title-text">YOU DON&apos;T TAKE.</span>
               </div>
               <img
-                src="/1mshot/images/miss100-mobile-title.svg"
+                src={`\${prefix}/images/miss100-mobile-title.svg`}
                 alt="YOU MISS 100% OF THE SHOTS YOU DON'T TAKE."
                 className="miss-title-mobile-img"
               />

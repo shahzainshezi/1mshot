@@ -451,7 +451,7 @@ h6 {
   width: 100%;
   display: flex;
   align-items: center;
-  background-image: url('/1mshot/images/hero_bg.webp');
+  background-image: url('../../public/images/hero_bg.webp');
   background-size: cover;
   background-position: right top;
   background-repeat: no-repeat;
@@ -652,7 +652,7 @@ h6 {
 
 @media (max-width: 768px) {
   .hero-section {
-    background-image: url('/1mshot/images/hero_mobile_bg.webp') !important;
+    background-image: url('../../public/images/hero_mobile_bg.webp') !important;
     background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;
@@ -795,7 +795,7 @@ h6 {
 
   /* Mobile Stats Banner Overrides */
   .stats-banner {
-    background-image: url('/1mshot/images/frame_101_mobile_bg.png');
+    background-image: url('../../public/images/frame_101_mobile_bg.png');
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -884,7 +884,7 @@ h6 {
 .stats-banner {
   position: relative;
   background-color: #000;
-  background-image: url('/1mshot/images/frame_101.webp');
+  background-image: url('../../public/images/frame_101.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -984,7 +984,7 @@ h6 {
   content: '';
   position: absolute;
   inset: 0;
-  background-image: url('/1mshot/images/frame_59_bg.webp');
+  background-image: url('../../public/images/frame_59_bg.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1295,7 +1295,7 @@ h6 {
 /* Responsiveness */
 @media (max-width: 1024px) {
   .hiw-section::before {
-    background-image: url('/1mshot/images/hiw_mobile_bg.webp') !important;
+    background-image: url('../../public/images/hiw_mobile_bg.webp') !important;
     background-position: center center;
   }
 
@@ -1492,7 +1492,7 @@ h6 {
 }
 
 .format-panel {
-  background-image: url('/1mshot/images/frame_20.webp');
+  background-image: url('../../public/images/frame_20.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1506,7 +1506,7 @@ h6 {
 }
 
 .format-panel-right {
-  background-image: url('/1mshot/images/frame_20.webp');
+  background-image: url('../../public/images/frame_20.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1886,7 +1886,7 @@ h6 {
 .partners-section {
   position: relative;
   background-color: #000;
-  background-image: url('/1mshot/images/frame_143_bg.webp');
+  background-image: url('../../public/images/frame_143_bg.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -2654,7 +2654,7 @@ h6 {
 .competition-bg-img {
   position: absolute;
   inset: 0;
-  background-image: url('/1mshot/images/frame_69_with_player.webp');
+  background-image: url('../../public/images/frame_69_with_player.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -2807,7 +2807,7 @@ h6 {
   }
 
   .competition-bg-img {
-    background-image: url('/1mshot/images/competition_mobile_player.webp') !important;
+    background-image: url('../../public/images/competition_mobile_player.webp') !important;
     background-size: 100% auto;
     background-position: center bottom;
     background-repeat: no-repeat;
@@ -2863,7 +2863,7 @@ h6 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   min-height: 910px;
-  background-image: url('/1mshot/images/frame_21_bg.webp');
+  background-image: url('../../public/images/frame_21_bg.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -2954,7 +2954,7 @@ h6 {
 }
 
 .limited-section {
-  background-image: url('/1mshot/images/frame_33_bg.webp');
+  background-image: url('../../public/images/frame_33_bg.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -3132,7 +3132,7 @@ h6 {
    ============================================================ */
 .after-section {
   position: relative;
-  background-image: url('/1mshot/images/frame_83_bg.webp');
+  background-image: url('../../public/images/frame_83_bg.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -3300,7 +3300,7 @@ h6 {
    ============================================================ */
 .why-section {
   position: relative;
-  background-image: url('/1mshot/images/frame_46_bg.webp');
+  background-image: url('../../public/images/frame_46_bg.webp');
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
@@ -3549,7 +3549,7 @@ h6 {
 .miss-section {
   position: relative;
   background-color: #000000;
-  background-image: url('/1mshot/images/miss100_bg.webp');
+  background-image: url('../../public/images/miss100_bg.webp');
   background-size: cover;
   background-position: left top;
   background-repeat: no-repeat;
@@ -3759,7 +3759,7 @@ h6 {
     width: 100%;
     margin: -10px auto 0;
     align-self: center;
-    background-image: url('/1mshot/images/miss100_mobile_player_bg.webp') !important;
+    background-image: url('../../public/images/miss100_mobile_player_bg.webp') !important;
     background-size: cover;
     background-position: center bottom;
     background-repeat: no-repeat;

@@ -1,6 +1,8 @@
 "use client";
 import { useEffect, useState } from "react";
 
+const prefix = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
 export default function Preloader() {
   const [progress, setProgress] = useState(0);
   const [isLoaded, setIsLoaded] = useState(false);
@@ -50,7 +52,7 @@ export default function Preloader() {
         {/* Brand logo wrapper */}
         <div className="preloader-logo-wrap">
           <img
-            src="/1mshot/1mshot-logo-cropped.webp"
+            src={`\${prefix}/1mshot-logo-cropped.webp`}
             alt="1MSHOT"
             className="preloader-logo"
           />

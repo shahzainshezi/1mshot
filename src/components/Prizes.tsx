@@ -1,9 +1,11 @@
 import CountUp from "./CountUp";
 
+const prefix = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
 function BasketballIcon() {
   return (
     <div className="prize-basketball-icon">
-      <img src="/1mshot/images/mask_group_1.png" alt="Prize Icon" className="prize-icon-img" />
+      <img src={`\${prefix}/images/mask_group_1.png`} alt="Prize Icon" className="prize-icon-img" />
     </div>
   );
 }
@@ -21,7 +23,7 @@ export default function Prizes() {
             </div>
           </div>
           <img
-            src="/1mshot/images/rewards-mobile-title.svg"
+            src={`\${prefix}/images/rewards-mobile-title.svg`}
             alt="STATE TO NATIONAL. REAL REWARDS"
             className="prizes-heading-mobile-img"
           />
