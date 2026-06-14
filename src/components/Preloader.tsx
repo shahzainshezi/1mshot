@@ -52,7 +52,7 @@ export default function Preloader() {
         {/* Brand logo wrapper */}
         <div className="preloader-logo-wrap">
           <img
-            src={`\${prefix}/1mshot-logo-cropped.webp`}
+            src={`${prefix}/1mshot-logo-cropped.webp`}
             alt="1MSHOT"
             className="preloader-logo"
           />

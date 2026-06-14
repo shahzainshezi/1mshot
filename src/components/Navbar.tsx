@@ -22,7 +22,7 @@ export default function Navbar() {
         {/* Logo */}
         <div className="nav-logo">
           <img
-            src={`\${prefix}/1mshot-logo-cropped.webp`}
+            src={`${prefix}/1mshot-logo-cropped.webp`}
             alt="1MSHOT"
             style={{ height: "28px", width: "auto", display: "block" }}
           />
@@ -53,7 +53,7 @@ export default function Navbar() {
               <X size={24} />
             ) : (
               <img
-                src={`\${prefix}/images/hamburger.svg`}
+                src={`${prefix}/images/hamburger.svg`}
                 alt="Menu"
                 style={{ height: "24px", width: "auto", display: "block" }}
               />

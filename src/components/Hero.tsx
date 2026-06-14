@@ -21,7 +21,7 @@ export default function Hero() {
               </div>
             </div>
             <img
-              src={`\${prefix}/images/hero-mobile-title.svg`}
+              src={`${prefix}/images/hero-mobile-title.svg`}
               alt="The Official $1,000,000 3-Point Contest"
               className="hero-title-mobile-img animate-fade-up"
             />
