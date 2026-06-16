@@ -38,7 +38,7 @@ export default function AfterRegister() {
   return (
     <>
       {/* What Happens After You Register */}
-      <section className="after-section">
+      {/* <section className="after-section">
         <div className="after-container">
           <div className="after-cards-col">
             <div className="after-cards-grid">
@@ -66,7 +66,7 @@ export default function AfterRegister() {
             </a>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Why Not You */}
       <section className="why-section">
