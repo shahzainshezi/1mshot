@@ -26,20 +26,20 @@ export default function Hero() {
               className="hero-title-mobile-img animate-fade-up"
             />
           </h1>
-          
+
           <p className="hero-subtitle animate-fade-up delay-2">
             For Everyday Hoopers. No Pros. No Politics. <span className="green-highlight">Just Buckets.</span>
           </p>
-          
+
           <p className="hero-racks animate-fade-up delay-3">
             Five Racks. One Minute. One Million
           </p>
-          
+
           <div className="hero-cta-wrapper animate-fade-up delay-4">
             <a href="#register" className="btn-hero-cta font-satoshi">
-              Take Your Shot — $1,000,000 on the Line
+              Register now - limited spots.
             </a>
-            
+
             <div className="hero-badges">
               <div className="hero-badge">
                 <Zap size={14} className="badge-icon-green" />
@@ -55,7 +55,7 @@ export default function Hero() {
               </div>
             </div>
           </div>
-          
+
           <a href="#rules" className="hero-rules-link font-satoshi animate-fade-up delay-5">
             Want Full Details? View Official Rules & Structure →
           </a>
@@ -64,3 +64,4 @@ export default function Hero() {
     </section>
   );
 }
+

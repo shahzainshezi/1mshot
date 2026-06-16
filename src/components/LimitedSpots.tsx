@@ -74,7 +74,7 @@ export default function LimitedSpots() {
           </ul>
           
           <a href="#register" className="btn-full-green beginning-btn">
-            LIMITED SPOTS — REGISTER NOW
+            REGISTER NOW
           </a>
         </div>
 

@@ -2,17 +2,21 @@
 const prefix = process.env.NEXT_PUBLIC_BASE_PATH || "";
 const rules = [
   "5 Racks",
-  "1 Minute",
-  "Money balls included",
-  "Bonus long-range shots",
-  "Highest score wins",
+  "25 Rack Balls",
+  "2 Deep Bonus Balls",
+  "60 Seconds",
+  "Maximum Score: 36",
+  "Highest Score Advances",
 ];
 
 const shooters = [
-  "Everyday hoopers",
-  "High school players",
-  "College players",
-  "Anyone who can shoot",
+  "High School Players",
+  "College Players",
+  "Adult Players",
+  "Basketball Trainers",
+  "Former Players",
+  "Basketball Enthusiasts",
+  "Anyone Who Can Shoot",
 ];
 
 function CheckBullet() {
@@ -35,7 +39,7 @@ export default function TheFormat() {
         <div className="format-panel">
           <div className="format-badge">THE RULES</div>
           <div className="format-content-body">
-            <h2 className="format-panel-title">THE FORMAT</h2>
+            <h2 className="format-panel-title">CONTEST FORMAT</h2>
             <ul className="format-list">
               {rules.map((rule) => (
                 <li key={rule} className="format-list-item">
@@ -72,7 +76,7 @@ export default function TheFormat() {
         <div className="format-panel format-panel-right">
           <div className="format-badge">THE SHOOTERS</div>
           <div className="format-content-body">
-            <h2 className="format-panel-title">WHO THIS IS FOR</h2>
+            <h2 className="format-panel-title">WHO IT'S FOR</h2>
             <ul className="format-list">
               {shooters.map((shooter) => (
                 <li key={shooter} className="format-list-item">

@@ -1,5 +1,3 @@
-import CountUp from "./CountUp";
-
 const prefix = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
 function BasketballIcon() {
@@ -30,35 +28,40 @@ export default function Prizes() {
         </div>
 
         <div className="prizes-table">
-          {/* State Level */}
-          <div className="prize-col">
-            <span className="prize-col-level">STATE LEVEL</span>
-            <BasketballIcon />
-            <div className="prize-col-amount">
-              <CountUp end={10000} prefix="$" />
-            </div>
-            <p className="prize-col-desc">High school & adult champions per state</p>
-          </div>
-
-          {/* High School Nationals */}
-          <div className="prize-col prize-col-border">
-            <span className="prize-col-level">HIGH SCHOOL NATIONALS</span>
-            <BasketballIcon />
-            <div className="prize-col-amount">
-              <CountUp end={100000} prefix="$" />
-            </div>
-            <p className="prize-col-desc">One national champion</p>
-          </div>
-
           {/* Grand Prize */}
-          <div className="prize-col prize-col-featured">
-            <div className="prize-grand-badge">GRAND PRIZE</div>
+          <div className="prize-col">
             <span className="prize-col-level">ADULT NATIONAL CHAMPION</span>
             <BasketballIcon />
             <div className="prize-col-amount">
-              <CountUp end={1000000} prefix="$" />
+              $1,000,000
             </div>
-            <p className="prize-col-desc">One champion. One shot. One million.</p>
+          </div>
+
+          {/* Male Youth Nationals */}
+          <div className="prize-col">
+            <span className="prize-col-level">MALE YOUTH NATIONAL CHAMPION</span>
+            <BasketballIcon />
+            <div className="prize-col-amount">
+              $100,000
+            </div>
+          </div>
+
+          {/* Female Youth Nationals */}
+          <div className="prize-col">
+            <span className="prize-col-level">FEMALE YOUTH NATIONAL CHAMPION</span>
+            <BasketballIcon />
+            <div className="prize-col-amount">
+              $100,000
+            </div>
+          </div>
+
+          {/* All State Champions */}
+          <div className="prize-col">
+            <span className="prize-col-level">ALL STATE CHAMPIONS</span>
+            <BasketballIcon />
+            <div className="prize-col-amount">
+              $10,000
+            </div>
           </div>
         </div>
 
@@ -67,9 +70,15 @@ export default function Prizes() {
             EVERY LEVEL MATTERS. <span className="green-text">EVERY SHOT COUNTS</span>
           </div>
 
-          <a href="#register" className="btn-full-green prizes-cta">
-            COMPETE FOR $1,000,000
-          </a>
+          <div className="flex flex-col items-center gap-4 w-full" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '22px', width: '100%' }}>
+            <a href="#register" className="btn-full-green prizes-cta">
+              Register now - Limited Spots
+            </a>
+            
+            <a href="#rules" className="hero-rules-link font-satoshi">
+              Want Full Details? View Official Rules & Structure →
+            </a>
+          </div>
         </div>
       </div>
     </section>

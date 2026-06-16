@@ -22,8 +22,8 @@ export default function Home() {
       <ScrollReveal />
       <Navbar />
       <Hero />
-      <Ticker />
       <Miss100 />
+      <Ticker />
       <StatsBanner />
       <HowItWorks />
       <TickerBar />
@@ -35,8 +35,10 @@ export default function Home() {
       </div>
       <BuiltForCompetition />
       <LimitedSpots />
-      <AfterRegister />
+      {/* <AfterRegister /> */}
       <Footer />
     </main>
   );
 }
+
+

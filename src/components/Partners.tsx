@@ -60,23 +60,26 @@ export default function Partners() {
 
         {/* Partner category cards */}
         <div className="partner-cards-grid">
-          {partnerCategories.map((cat) => (
-            <div key={cat.type} className="partner-card">
-              <div className="partner-card-icon-wrap">
-                <img src={cat.img} alt={cat.type} className="partner-card-icon-img" />
+          {partnerCategories.map((cat) => {
+            const isHighlighted = cat.type === "APPAREL PARTNER" || cat.type === "MEDIA PARTNER";
+            return (
+              <div key={cat.type} className={`partner-card ${isHighlighted ? "partner-card-highlighted" : ""}`}>
+                <div className="partner-card-icon-wrap">
+                  <img src={cat.img} alt={cat.type} className="partner-card-icon-img" />
+                </div>
+                <div className="partner-card-labels">
+                  <span className="partner-card-official">{cat.label}</span>
+                  <span className="partner-card-type">{cat.type}</span>
+                </div>
+                <div className="partner-card-sep" />
+                <span className="partner-card-opportunity">partner opportunity</span>
+                <div className="partner-card-active">
+                  <span className="partner-active-dot" />
+                  <span className="partner-active-label">active discussions</span>
+                </div>
               </div>
-              <div className="partner-card-labels">
-                <span className="partner-card-official">{cat.label}</span>
-                <span className="partner-card-type">{cat.type}</span>
-              </div>
-              <div className="partner-card-sep" />
-              <span className="partner-card-opportunity">partner opportunity</span>
-              <div className="partner-card-active">
-                <span className="partner-active-dot" />
-                <span className="partner-active-label">active discussions</span>
-              </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
 
         {/* Footer CTA */}
@@ -89,7 +92,7 @@ export default function Partners() {
             <div className="partner-cat-line" />
           </div>
           <a href="#register" className="btn-full-green">
-            TAKE YOUR SHOT — $1,000,000 ON THE LINE →
+            Register Now - Limited Spots
           </a>
         </div>
       </div>
