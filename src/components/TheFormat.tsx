@@ -76,7 +76,7 @@ export default function TheFormat() {
         <div className="format-panel format-panel-right">
           <div className="format-badge">THE SHOOTERS</div>
           <div className="format-content-body">
-            <h2 className="format-panel-title">WHO IT'S FOR</h2>
+            <h2 className="format-panel-title">{"WHO IT'S FOR"}</h2>
             <ul className="format-list">
               {shooters.map((shooter) => (
                 <li key={shooter} className="format-list-item">

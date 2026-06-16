@@ -1,6 +1,12 @@
 
 const prefix = process.env.NEXT_PUBLIC_BASE_PATH || "";
-const stats = [
+interface StatItem {
+  title: string;
+  subtitle?: string;
+  icon: string;
+}
+
+const stats: StatItem[] = [
   {
     title: "Five Racks",
     // subtitle: "Five Racks. Unlimited focus.",
