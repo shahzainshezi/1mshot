@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 const prefix = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
 const beginningItems = [
-  "Real players.",
+  "Real Players.",
   "Real opportunity.",
   "Real competition.",
 ];
