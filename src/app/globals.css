@@ -2957,6 +2957,10 @@ h6 {
   display: block;
 }
 
+.beginning-map-img.mobile-map {
+  display: none;
+}
+
 .beginning-content-col {
   display: flex;
   flex-direction: column;
@@ -3170,6 +3174,14 @@ h6 {
 
   .beginning-map-col {
     padding: 20px 24px;
+  }
+
+  .beginning-map-img.mobile-map {
+    display: block;
+  }
+
+  .beginning-map-img.desktop-map {
+    display: none;
   }
 
   .beginning-btn {

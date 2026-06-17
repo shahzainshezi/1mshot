@@ -83,7 +83,12 @@ export default function LimitedSpots() {
           <img
             src={`${prefix}/images/image_48_map.webp`}
             alt="US Map Scale"
-            className="beginning-map-img"
+            className="beginning-map-img desktop-map"
+          />
+          <img
+            src={`${prefix}/images/image_48_map_mobile.png`}
+            alt="US Map Scale Mobile"
+            className="beginning-map-img mobile-map"
           />
         </div>
       </section>
