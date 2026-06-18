@@ -2456,8 +2456,8 @@ h6 {
   }
 
   .btn-full-green {
-    font-size: clamp(10px, 3.3vw, 14px);
-    padding: 18px 12px;
+    font-size: clamp(13px, 3.8vw, 16px);
+    padding: 18px 16px;
     border-radius: 4px;
     white-space: nowrap;
     display: flex;
@@ -3164,7 +3164,7 @@ h6 {
   .beginning-section {
     grid-template-columns: 1fr;
     min-height: auto;
-    padding-bottom: 60px;
+    padding-bottom: 0;
   }
 
   .beginning-content-col {
@@ -3173,7 +3173,7 @@ h6 {
   }
 
   .beginning-map-col {
-    padding: 20px 24px;
+    padding: 20px 1px 0 1px;
   }
 
   .beginning-map-img.mobile-map {
@@ -3493,6 +3493,9 @@ h6 {
   .why-cta-btn {
     width: 100%;
     max-width: 480px;
+    white-space: nowrap;
+    font-size: clamp(10px, 3.2vw, 15px);
+    padding: 18px 8px;
   }
 
   /* Bold headings of subsequent sections on mobile */
@@ -3953,17 +3956,19 @@ h6 {
 
   .btn-miss-cta {
     width: 100%;
-    padding: 16px 24px;
+    padding: 16px 20px;
     display: block;
     text-align: center;
     box-shadow: 0 4px 15px rgba(0, 123, 52, 0.3);
+    font-size: clamp(11px, 3.5vw, 15px);
+    white-space: nowrap;
   }
 }
 
 @media (max-width: 480px) {
   .btn-miss-cta {
     width: 100%;
-    padding: 16px 24px;
+    padding: 16px 12px;
   }
 }
 
