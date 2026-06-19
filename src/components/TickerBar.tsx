@@ -10,13 +10,13 @@ function StarIcon({ size = 27 }: { size?: number }) {
 }
 
 const darkItems = [
-  "23 States — Youth & Adult Divisions",
+  "50 States — Youth & Adult Divisions",
   "State Winners: $10,000 Each",
   "Two National Champions: $1,000,000",
 ];
 
 const greenItems = [
-  "23 States — Youth & Adult Divisions",
+  "50 States — Youth & Adult Divisions",
   "HS National Champions: $100,000",
   "Adult National Champions: $1,000,000",
 ];
