@@ -59,7 +59,7 @@ export default function TheFormat() {
         {/* Center player images */}
         <div className="format-img-col format-img-left-col">
           <img
-            src={`${prefix}/images/format_player_left.webp`}
+            src={`${prefix}/images/c6aa375e-fe97-48bf-9810-c7b37f681c89.jfif`}
             alt="Player"
             className="format-player-img"
           />

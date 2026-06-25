@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 
 const prefix = process.env.NEXT_PUBLIC_BASE_PATH || "";
@@ -14,9 +14,18 @@ const NAV_LINKS = [
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 50);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
-    <nav className="navbar">
+    <nav className={`navbar${scrolled ? " navbar-scrolled" : ""}`}>
       <div className="navbar-inner">
 
         {/* Logo */}
@@ -24,12 +33,12 @@ export default function Navbar() {
           <img
             src={`${prefix}/1mshot-logo-cropped.webp`}
             alt="1MSHOT"
-            style={{ height: "28px", width: "auto", display: "block" }}
+            style={{ height: "44px", width: "auto", display: "block" }}
           />
         </div>
 
         {/* Desktop Links */}
-        <div className="nav-links-desktop" style={{ display: "flex" }}>
+        <div className="nav-links-desktop">
           {NAV_LINKS.map((item) => (
             <a key={item.label} href={item.href} className="nav-link">
               {item.label}
@@ -37,8 +46,8 @@ export default function Navbar() {
           ))}
         </div>
 
-        {/* CTA Button */}
-        <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
+        {/* CTA Button & Mobile Toggle */}
+        <div className="nav-actions-wrap">
           <a href="#register" className="btn-cta header-cta">
             Secure Your Spot
           </a>
@@ -83,4 +92,3 @@ export default function Navbar() {
     </nav>
   );
 }
-

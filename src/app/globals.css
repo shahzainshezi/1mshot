@@ -137,6 +137,11 @@ h6 {
   box-shadow: 0 8px 20px rgba(0, 200, 81, 0.35);
 }
 
+/* Hide header CTA on desktop */
+.header-cta {
+  display: none;
+}
+
 .btn-cta:active {
   transform: translateY(-1px) scale(0.98);
   box-shadow: 0 4px 10px rgba(0, 200, 81, 0.2);
@@ -149,11 +154,56 @@ h6 {
   left: 0;
   right: 0;
   z-index: 50;
-  background-color: #000000;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  background-color: transparent;
+  border-bottom: none;
   padding: 15px 0;
   width: 100%;
-  backdrop-filter: blur(8px);
+  transition: background-color 0.4s ease, border-bottom 0.4s ease, backdrop-filter 0.4s ease;
+}
+
+@keyframes navSlideDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.navbar-scrolled {
+  background-color: rgba(0, 0, 0, 0.95);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  animation: navSlideDown 0.4s cubic-bezier(0.25, 0.8, 0.25, 1) forwards;
+}
+
+.navbar-scrolled .navbar-inner {
+  justify-content: space-between;
+}
+
+.navbar-scrolled .nav-links-desktop {
+  display: flex !important;
+}
+
+.navbar-scrolled .nav-actions-wrap {
+  display: flex;
+}
+
+.navbar-scrolled .header-cta {
+  display: inline-block;
+}
+
+.navbar-scrolled .nav-logo img {
+  height: 28px !important;
+}
+
+/* Hide CTA + hamburger wrapper on desktop */
+.nav-actions-wrap {
+  display: none;
+  align-items: center;
+  gap: 12px;
 }
 
 .navbar-inner {
@@ -163,7 +213,7 @@ h6 {
   padding: 0 24px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .nav-logo img {
@@ -184,7 +234,7 @@ h6 {
 /* Footer logo styles moved to main footer section */
 
 .nav-links-desktop {
-  display: flex;
+  display: none;
   align-items: center;
   gap: 30px;
 }
@@ -254,12 +304,41 @@ h6 {
 }
 
 @media (max-width: 900px) {
-  .nav-links-desktop {
+  .navbar,
+  .navbar.navbar-scrolled {
+    background-color: #000000;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(8px);
+    animation: none;
+  }
+
+  .navbar-inner {
+    justify-content: space-between;
+  }
+
+  /* Original logo size on mobile */
+  .nav-logo img,
+  .navbar-scrolled .nav-logo img {
+    height: 28px !important;
+  }
+
+  .nav-actions-wrap,
+  .navbar-scrolled .nav-actions-wrap {
+    display: flex;
+  }
+
+  .nav-links-desktop,
+  .navbar-scrolled .nav-links-desktop {
     display: none !important;
   }
 
   .nav-mobile-toggle {
     display: block;
+  }
+
+  .header-cta,
+  .navbar-scrolled .header-cta {
+    display: inline-block;
   }
 }
 
@@ -460,6 +539,22 @@ h6 {
   overflow: hidden;
 }
 
+.hero-video-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Desktop video visible by default, mobile video hidden */
+.hero-video-mobile {
+  display: none;
+}
+
 
 
 .hero-container {
@@ -651,6 +746,14 @@ h6 {
 }
 
 @media (max-width: 768px) {
+  .hero-video-desktop {
+    display: none;
+  }
+
+  .hero-video-mobile {
+    display: block;
+  }
+
   .hero-section {
     background-image: url('../../public/images/hero_mobile_bg.webp') !important;
     background-size: cover;
