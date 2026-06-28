@@ -4030,7 +4030,7 @@ h6 {
   }
 
   .miss-image-wrapper::before {
-    bottom: 40px;
+    bottom: 80px;
   }
 
   .miss-image-wrapper .miss-image {
