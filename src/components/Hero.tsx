@@ -11,12 +11,14 @@ export default function Hero() {
   useEffect(() => {
     if (videoRef.current) {
       videoRef.current.muted = true;
+      videoRef.current.loop = true;
       videoRef.current.play().catch((err) => {
         console.error("Video autoplay failed:", err);
       });
     }
     if (mobileVideoRef.current) {
       mobileVideoRef.current.muted = true;
+      mobileVideoRef.current.loop = true;
       mobileVideoRef.current.play().catch((err) => {
         console.error("Mobile video autoplay failed:", err);
       });
@@ -33,6 +35,11 @@ export default function Hero() {
         muted
         playsInline
         src={`${prefix}/videos/hero-bg-desktop.mp4`}
+        onEnded={() => {
+          if (videoRef.current) {
+            videoRef.current.play().catch((err) => console.error("Desktop video loop play failed:", err));
+          }
+        }}
       />
       <video
         ref={mobileVideoRef}
@@ -42,6 +49,11 @@ export default function Hero() {
         muted
         playsInline
         src={`${prefix}/videos/hero-bg-mobile.mp4`}
+        onEnded={() => {
+          if (mobileVideoRef.current) {
+            mobileVideoRef.current.play().catch((err) => console.error("Mobile video loop play failed:", err));
+          }
+        }}
       />
       <div className="hero-container">
         <div className="hero-content">

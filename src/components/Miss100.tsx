@@ -9,11 +9,17 @@ export default function Miss100() {
         <div className="miss-grid">
           {/* Left Visual — Player holding neon green basketball (miss100_player.png) */}
           <div className="miss-image-wrapper">
-            <img
-              src={`${prefix}/images/miss100_player.webp`}
-              alt="You miss 100% of the shots you don't take"
-              className="miss-image"
-            />
+            <picture>
+              <source
+                media="(max-width: 768px)"
+                srcSet={`${prefix}/images/miss100_player_mobile.png`}
+              />
+              <img
+                src={`${prefix}/images/miss100_player.webp`}
+                alt="You miss 100% of the shots you don't take"
+                className="miss-image"
+              />
+            </picture>
           </div>
 
           {/* Right Content */}
